@@ -1,0 +1,25 @@
+name:                jemalloc-haskell
+version:             0.1.0.0
+-- synopsis:            
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              winterland1989
+maintainer:          winterland1989@gmail.com
+-- copyright:           
+category:            System
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:      Foreign.Marshall.Jemalloc 
+                    ,   Data.ByteString.Jemalloc
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base >=4.8 && <4.9
+                    ,  bytestring >= 0.9 && < 0.11
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
+
+  pkgconfig-depends:   jemalloc
